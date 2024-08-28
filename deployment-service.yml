@@ -12,7 +12,7 @@ spec:
       labels:
         app: emailservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       terminationGracePeriodSeconds: 5
       securityContext:
         fsGroup: 1000
