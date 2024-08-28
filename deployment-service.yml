@@ -78,7 +78,7 @@ spec:
       labels:
         app: checkoutservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       containers:
         - name: server
           image: awsd43/checkoutservice:latest
@@ -139,7 +139,7 @@ spec:
       labels:
         app: recommendationservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
@@ -197,7 +197,7 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       containers:
         - name: server
           image: awsd43/frontend:latest
@@ -293,7 +293,7 @@ spec:
       labels:
         app: paymentservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
@@ -345,7 +345,7 @@ spec:
       labels:
         app: productcatalogservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
@@ -397,7 +397,7 @@ spec:
       labels:
         app: cartservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
@@ -453,7 +453,7 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
       containers:
@@ -492,7 +492,7 @@ spec:
       labels:
         app: currencyservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
@@ -545,7 +545,7 @@ spec:
       labels:
         app: shippingservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       containers:
       - name: server
         image: awsd43/shippingservice:latest
@@ -650,7 +650,7 @@ spec:
       labels:
         app: adservice
     spec:
-      serviceAccountName: default
+      serviceAccountName: jenkins
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
